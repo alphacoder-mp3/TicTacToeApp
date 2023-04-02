@@ -1,0 +1,78 @@
+/* media query setup for board and its cells*/
+@media only screen and (max-width: 768px) {
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(3, 0fr);
+    margin: 10px;
+    font-size: 30%;
+  }
+  .cell {
+    border: 1px solid #999;
+    float: left;
+    font-size: 4vw;
+    height: 10vh;
+    padding: 0;
+    text-align: center;
+    width: 10vw;
+  }
+}
+/* Set up the board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  grid-template-rows: repeat(3, 0fr);
+  margin: 10px;
+}
+
+.cell {
+  border: 1px solid #999;
+  float: left;
+  font-size: 40px;
+  height: 80px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #f5f5f5;
+}
+
+/* Set up the status and words sections */
+.status {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.reset {
+  margin: 10px;
+  margin-top: 0px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.reset:active {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.reset:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.reset:focus {
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+}

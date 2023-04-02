@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <div id="game-container">
+      <!-- 1st way to embede my react app in any web page either when we locally start it, or just put it on server via serve -s build -->
+      <iframe src="http://localhost:3000"></iframe>
+      <!-- 2nd way to embede my react app in any web page -->
+      <!-- <script src="./TicTacToeGame.js" type="module"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          renderTicTacToeGame("game-container");
+        });
+      </script> -->
+      <!-- 3rd way to embede my react app in any web page, for this to run, we have to specify the homepage in our package.json -->
+      <!-- <script type="text/javascript" src="http://localhost/main.5a9eb44c.js"></script> -->
+    </div>
+  </body>
+</html>
